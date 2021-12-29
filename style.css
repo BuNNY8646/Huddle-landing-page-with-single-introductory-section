@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+}
+body{
+    max-height: 100vh;
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    background-size: cover;
+}
+.container{
+    padding: 4% 10% 4% 4%;
+}
+.item-1 img{
+    width: 90%;
+    height: 105%;
+}
+h2{
+    font-weight: 700;
+    font-size: 500%;
+    margin: 7% 0% 0% 0%;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+    font-size: 150%;
+    color: #fff;
+    font-stretch: semi-condensed,ultra-expanded;
+}
+.btn{
+    color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    padding: 2% 8%;
+    margin: 3% 0%;
+    border: 1px #fff;
+}
+.btn:hover{
+    color: #fff;
+    background-color: var(--Soft-Magenta);
+}
+i{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: .5%;
+}
+i:hover{
+    color: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+}
+#col-3{
+    display: flex;
+    justify-content: right;
+}
+@media (min-width:1440px) {
+    .row{
+        margin: 4% 0% 0% 0%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (min-width:375px) and (max-width:1440px){
+    body{
+        max-height: 100vh;
+        background-image: url('images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-color: var(--Violet);
+        background-size: cover;
+    }
+    .container{
+        padding: 4%;
+    }
+    .item-1 img{
+        margin: 10% 0%;
+        width: 100%;
+        height: 90%;
+    }
+    .item-2{
+        text-align: center;
+    }
+    #col-3{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        margin:0%;
+        font-size: 180%;
+    }
+    p{
+        font-size: 115%;
+    }
+    .btn{
+        font-size: 105%;
+        padding: 1% 20%;
+    }
+    i{
+        font-size: large;
+        padding: 2%;
+        margin: 1%;
+    }
+    #col-3{
+        margin: 5% 0%;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
